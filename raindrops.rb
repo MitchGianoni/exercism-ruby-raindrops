@@ -4,13 +4,15 @@ class Raindrops
   def self.convert(num)
     answer = ''
 
-    if num % 3 == 0
+    if num % 3 == 0 && num % 5 == 0
+      answer += 'PlingPlang'
+    elsif num % 3 == 0
       answer += 'Pling'
     elsif num % 5 == 0
       answer += 'Plang'
     elsif num % 7 == 0
       answer += 'Plong'
-    elsif num = 1
+    else
       return "#{num}"
     end
 
