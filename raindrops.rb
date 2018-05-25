@@ -8,6 +8,8 @@ class Raindrops
       answer += 'Pling'
     elsif num % 5 == 0
       answer += 'Plang'
+    elsif num % 7 == 0
+      answer += 'Plong'
     elsif num = 1
       return "#{num}"
     end
