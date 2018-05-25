@@ -4,10 +4,10 @@ class Raindrops
   def self.convert(num)
     answer = ''
 
-    #binding.pry
-
     if num % 3 == 0
       answer += 'Pling'
+    elsif num % 5 == 0
+      answer += 'Plang'
     elsif num = 1
       return "#{num}"
     end
