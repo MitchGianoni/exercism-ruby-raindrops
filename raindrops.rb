@@ -4,8 +4,14 @@ class Raindrops
   def self.convert(num)
     answer = ''
 
-    if num % 3 == 0 && num % 5 == 0
+    if num % 3 == 0 && num % 5 == 0 && num % 7 == 0
+      answer += 'PlingPlangPlong'
+    elsif num % 3 == 0 && num % 5 == 0
       answer += 'PlingPlang'
+    elsif num % 3 == 0 && num % 7 == 0
+      answer += 'PlingPlong'
+    elsif num % 5 == 0 && num % 7 == 0
+      answer += 'PlangPlong'
     elsif num % 3 == 0
       answer += 'Pling'
     elsif num % 5 == 0
